@@ -33,7 +33,7 @@ body {
 }
 
 body.light-theme {
-  ---color1: #000000; /* white text */
+  ---color1: #cacaca; /* white text */
   ---color2: #dedede; /* page background */
   ---color3: #e9e32d; /* card background */
   ---color4: #5a5a5a; /* muted text/borders */
@@ -46,6 +46,10 @@ body.light-theme {
   ---overlay1: rgba(0, 0, 0, 0.8);
 }
 
+.overflowfixer{
+  width: 100vw;
+  overflow-x: hidden;
+}
 .upcom-container {
   width: min(1100px, 94%);
   margin: 0 auto;
