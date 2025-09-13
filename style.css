@@ -2621,7 +2621,7 @@ footer .footer-events .image-grid {
   background: var(---color3);
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;

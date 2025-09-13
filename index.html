@@ -14,657 +14,660 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- header and banner joel -->
-    <header>
-      <div class="upcom-container upcom-navrow">
-        <div class="upcom-brand">
-          <a href=""
-            ><img
-            style="height: 50px;"
-              class="logoimg-header"
-              src="/static/image/logol1.png"
-              alt=""
-          /></a>
-        </div>
-        <nav class="upcom-nav-links">
-          <li><a href="#hero">HOME<i class="fa-thin fa-handshake fa-2xl" style="color: blue;"></i></a></li>
-          <li><a href="#about-main">ABOUT</a></li>
-          <li><a href="#events-section">EVENT</a></li>
-          <li><a href="#Gallery">GALLERY</a></li>
-          <li><a href="#feedback-page">FEEDBACK</a></li>
-          <li><a href="#contact-page">CONTACT</a></li>
-        </nav>
-        <label for="checkbox" class="cheked ham"
-          ><i class="fa-solid fa-bars"></i
-        ></label>
-        <input type="checkbox" name="checkbox" id="checkbox" />
-        <button class="signup-btn" id="openFormDesktop">Sign Up</button>
-        <div class="nv-responsive">
-          <ul>
-            <li><a href="#hero">HOME</a></li>
+    <div>
+      
+      <!-- header and banner joel -->
+      <header>
+        <div class="upcom-container upcom-navrow">
+          <div class="upcom-brand">
+            <a href=""
+              ><img
+              style="height: 50px;"
+                class="logoimg-header"
+                src="/static/image/logol1.png"
+                alt=""
+            /></a>
+          </div>
+          <nav class="upcom-nav-links">
+            <li><a href="#hero">HOME<i class="fa-thin fa-handshake fa-2xl" style="color: blue;"></i></a></li>
             <li><a href="#about-main">ABOUT</a></li>
             <li><a href="#events-section">EVENT</a></li>
             <li><a href="#Gallery">GALLERY</a></li>
             <li><a href="#feedback-page">FEEDBACK</a></li>
             <li><a href="#contact-page">CONTACT</a></li>
-          </ul>
-          <button class="signup-btn2" id="openFormMobile">Sign Up</button>
-        </div>
-      </div>
-    </header>
-
-    <!-- overlay -->
-    <div class="overlay" id="overlay">
-      <div class="popup">
-        <span class="close" id="closeBtn">&times;</span>
-        <h2>Event Registration</h2>
-
-        <form id="eventForm">
-          <input type="text" name="fullname" placeholder="Full Name" required />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-          />
-          <input
-            type="text"
-            name="dept"
-            placeholder="College / Department"
-            required
-          />
-          <button type="submit">Register</button>
-        </form>
-
-        <div class="success-message" id="successMsg">
-          Thank you for signing up!
-          <br />
-          The popup will close automatically...
-        </div>
-      </div>
-    </div>
-    <!-- overlay -->
-
-    <!-- HERO SLIDES -->
-    <section class="upcom-hero" id="hero">
-      <!-- Slide 1 -->
-      <div class="upcom-slide upcom-slide-0 active" data-index="0">
-        <div class="upcom-hero-bgcol split"></div>
-        <div class="upcom-herocard">
-          <div class="upcom-tag">CAMPUS CONNECT</div>
-          <h1 class="upcom-hero-title">WELCOME</h1>
-          <p class="upcom-subtag">Stay Updated, Stay Involved</p>
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="upcom-slide upcom-slide1" data-index="1">
-        <div class="upcom-hero-bgcol image"></div>
-        <div class="upcom-herocard">
-          <div class="upcom-tag">CAMPUS CONNECT</div>
-          <h1 class="upcom-hero-title">EXPLORE</h1>
-          <p class="upcom-subtag">Exciting events around campus</p>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="upcom-slide upcom-slide2" data-index="2">
-        <div class="upcom-hero-bgcol image"></div>
-        <div class="upcom-herocard">
-          <div class="upcom-tag">CAMPUS CONNECT</div>
-          <h1 class="upcom-hero-title">JOIN IN</h1>
-          <p class="upcom-subtag">Be part of the community</p>
-        </div>
-      </div>
-
-      <!-- Dots -->
-      <div class="upcom-dots" id="heroDots">
-        <button class="upcom-dot active" data-index="0"></button>
-        <button class="upcom-dot" data-index="1"></button>
-        <button class="upcom-dot" data-index="2"></button>
-      </div>
-    </section>
-
-    <!-- EVENTS -->
-    <section class="upcom-section upcom-container" id="events">
-      <div class="upcom-head">
-        <small class="upcom-muted">UPCOMING EVENTS</small>
-        <h2>Latest <strong>Awesome Events</strong></h2>
-
-        <!-- Countdown -->
-        <!-- <small> is reducing the size of the text-->
-        <div class="upcom-countdown" id="mainCountdown">
-          <div class="upcom-count">
-            <span id="cd-days">00</span><small>DAYS</small>
-          </div>
-          <div class="upcom-count">
-            <span id="cd-hours">00</span><small>HOURS</small>
-          </div>
-          <div class="upcom-count">
-            <span id="cd-mins">00</span><small>MINS</small>
-          </div>
-          <div class="upcom-count">
-            <span id="cd-secs">00</span><small>SECS</small>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cards -->
-      <div class="upcom-events-grid">
-        <div
-          class="upcom-card"
-          data-id="1"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        >
-          <div class="upcom-card-img upcom-img-1"></div>
-          <div class="upcom-date"></div>
-          <div class="upcom-card-info">
-            <h3 class="upcom-cardtitle"></h3>
-            <div class="upcom-card-oth"></div>
-          </div>
-        </div>
-
-        <div class="upcom-card" data-id="2">
-          <div class="upcom-card-img upcom-img-2"></div>
-          <div class="upcom-date"></div>
-          <div class="upcom-card-info">
-            <h3 class="upcom-cardtitle"></h3>
-            <div class="upcom-card-oth"></div>
-          </div>
-        </div>
-
-        <div
-          class="upcom-card"
-          data-id="3"
-          data-aos="fade-left"
-          data-aos-duration="1000"
-        >
-          <div class="upcom-card-img upcom-img-3"></div>
-          <div class="upcom-date"></div>
-          <div class="upcom-card-info">
-            <h3 class="upcom-cardtitle"></h3>
-            <div class="upcom-card-oth"></div>
-          </div>
-        </div>
-      </div>
-
-      <div id="noResults" class="upcom-noresults" hidden>No events found.</div>
-    </section>
-
-    <!-- header and banner joel end -->
-
-    <!-- About section gt section start -->
-
-    <div class="about-main" id="about-main">
-      <div class="about-cont">
-        <h2 class="about-txt">ABOUT Us</h2>
-
-        <div class="about-para">
-          <p>
-            Campus connect is a vibrant hub of innovation, creativity, and
-            culture. From technical fests and hackathons to cultural nights and
-            sports competitions, our campus is alive with opportunities for
-            students to showcase their talents and grow together.
-          </p>
-
-          <div class="about-btn">
-            <button class="btn">
-              <a href="#" class="txt-tx">View Events</a>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="parent">
-        <div class="about-card1">
-          <div class="card1-style">
-            <div class="img">
-             <i class="fa-solid fa-handshake fa-2xl"></i>
-            </div>
-
-            <p class="card1-style-txt">Friendly&nbsp;Community</p>
-            <pre class="card1-style-txt2">
-Stay Connected with
-students & faculty.
-                </pre
-            >
-          </div>
-          <div class="card2-style">
-            <div class="img">
-              <i class="fa-solid fa-calendar-days fa-2xl"></i>
-            </div>
-            <p class="card1-style-txt">Countless&nbsp;Events</p>
-            <pre class="card1-style-txt2">
-Explore 750+
-technical, cultural and 
-sports highlights.
-                </pre
-            >
-          </div>
-          <div class="card1-style">
-            <div class="img">
-              <i class="fa-solid fa-location-dot fa-2xl"></i>
-            </div>
-            <p class="card1-style-txt">Perfect&nbsp;Venue</p>
-            <pre class="card1-style-txt2">
-Find the right place
-for any event on
-campus.
-                </pre
-            >
-          </div>
-          <div class="card1-style">
-            <div class="img">
-             <i class="fa-solid fa-lightbulb fa-2xl"></i>
-            </div>
-            <p class="card1-style-txt">Unique&nbsp;Experience</p>
-            <pre class="card1-style-txt2">
-    Every event brings 
-    something new to
-    discover.
-                </pre
-            >
-          </div>
-          <div class="card1-style">
-            <div class="img">
-             <i class="fa-solid fa-camera fa-2xl"></i>
-            </div>
-            <p class="card1-style-txt">Unforgettable&nbsp;Moments</p>
-            <pre class="card1-style-txt2">
-    Relive the best times
-    from past festivals and
-    competitions.
-                </pre
-            >
-          </div>
-          <div class="card1-style">
-            <div class="img">
-              <i class="fa-solid fa-bell fa-2xl"></i>
-            </div>
-            <p class="card1-style-txt">Always&nbsp;Updated</p>
-            <pre class="card1-style-txt2">
-    Stay informed
-    anytime, anywhere.
-                </pre
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- About section gt section end -->
-
-    <!-- event ire section start -->
-    <section id="events-section" class="events-section">
-      <div class="container">
-        <!-- Section heading and filter toggle -->
-        <div class="events-header">
-          <h2 class="section-title">All Events</h2>
-          <div class="toggle-group" id="timeToggle">
-            <button data-filter="upcoming" class="toggle-btn">Upcoming</button>
-            <button data-filter="past" class="toggle-btn">Past</button>
-            <button data-filter="all" class="toggle-btn active">All</button>
-            <button id="showBookmarks" class="toggle-btn">
-              <i class="fa-regular fa-bookmark"></i> Bookmarked
-            </button>
-          </div>
-        </div>
-
-        <!-- Search + Sort + Categories -->
-        <div class="events-controls">
-          <div class="control search-control">
-            <input
-              id="searchInput"
-              type="search"
-              placeholder="Search for events"
-              aria-label="Search events"
-            />
-          </div>
-          <div class="control">
-            <select id="sortBy" aria-label="Sort events">
-              <option value="date">Sort by Date</option>
-              <option value="name">Sort by Name</option>
-              <option value="category">Sort by Category</option>
-            </select>
-          </div>
-          <div class="control" id="categoryFilters"></div>
-        </div>
-
-        <!-- Where the event cards appear -->
-        <div id="eventsGrid" class="events-grid" aria-live="polite"></div>
-
-        <!-- Message if no results -->
-        <div id="noResults" class="no-results" hidden>No events found.</div>
-      </div>
-    </section>
-
-    <!-- event ire section end -->
-
-    <!-- gallery section bolaji start-->
-    <div class="parent-container" id="Gallery">
-      <!-- container-box1-start -->
-      <div class="container-vibes">
-        <div class="box1">
-          <div class="campus10">
-            <!-- txt1-start -->
-            <p id="txt1"></p>
-            <p id="txt2"></p>
-            <!-- txt1-end -->
-          </div>
-          <div class="campus9">
-            <!-- txt3-start -->
-            <p id="txt3"></p>
-            <p id="txt4"></p>
-            <!-- txt3-end   -->
-          </div>
-          <div class="campus8">
-            <!-- txt5-start -->
-            <p class="txt5"></p>
-            <p class="txt6"></p>
-            <!-- txt5-end -->
-          </div>
-        </div>
-      </div>
-      <!-- container-box1-end -->
-
-      <!-- contatiner-box2-start -->
-      <div class="container-vibes">
-        <div class="box2">
-          <div class="campus7">
-            <!-- txt7-start -->
-            <p class="txt7"></p>
-            <p class="txt8"></p>
-            <!-- txt7-end -->
-          </div>
-          <div class="campus6">
-            <a href="/gallery.html">
-              <button class="b1">View More —></button>
-            </a>
-          </div>
-          <div class="campus5">
-            <!-- txt-9-start -->
-            <p class="txt9"></p>
-            <p class="txt10"></p>
-          </div>
-        </div>
-      </div>
-      <!-- container-box2-end -->
-
-      <!-- Container-box-3- -->
-      <div class="container-vibes">
-        <div class="box3">
-          <div class="campus4">
-            <!-- txt11-start -->
-            <p class="txt11"></p>
-            <p class="txt12"></p>
-            <!-- txt12-end -->
-          </div>
-          <div class="campus3">
-            <!-- txt13-start -->
-            <p class="txt13"></p>
-            <p class="txt14"></p>
-          </div>
-          <div class="campus2"></div>
-        </div>
-      </div>
-      <!-- container-box3-end -->
-    </div>
-
-    <!-- gallery section bolaji end-->
-
-    <!-- feedback section April start -->
-    <section id="feedback-page">
-      <div id="feedback-txt">
-        <h1>Feedback</h1>
-        <p>Tell us, what do you think? What are your thoughts?</p>
-      </div>
-      <div id="feedback-form-box">
-        <form action="#" method="post" id="feedback-form">
-          <!-- name -->
-          <input type="text" name="text" placeholder="Full Name" required />
-          <!-- email -->
-          <input type="text" name="text" placeholder="Your Email" required />
-          <br />
-          <!-- user type -->
-          <label for="user-type">User Type</label>
-          <select id="user-type" name="user-type" hidden>
-            <option value="student">Student</option>
-            <option value="faculty">Faculty</option>
-            <option value="admin" selected>Administrator</option>
-            <option value="visitor">Visitor</option>
-          </select>
-          <div class="custom-dropdown" tabindex="0">
-            <div class="selected">Visitor</div>
-            <ul class="options">
-              <li data-value="student">Student</li>
-              <li data-value="faculty">Faculty</li>
-              <li data-value="admin">Administrator</li>
-              <li data-value="visitor" class="active">Visitor</li>
+          </nav>
+          <label for="checkbox" class="cheked ham"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+          <input type="checkbox" name="checkbox" id="checkbox" />
+          <button class="signup-btn" id="openFormDesktop">Sign Up</button>
+          <div class="nv-responsive">
+            <ul>
+              <li><a href="#hero">HOME</a></li>
+              <li><a href="#about-main">ABOUT</a></li>
+              <li><a href="#events-section">EVENT</a></li>
+              <li><a href="#Gallery">GALLERY</a></li>
+              <li><a href="#feedback-page">FEEDBACK</a></li>
+              <li><a href="#contact-page">CONTACT</a></li>
             </ul>
+            <button class="signup-btn2" id="openFormMobile">Sign Up</button>
           </div>
-          <!-- event categories -->
-          <label for="categories">Event Categories</label>
-          <select id="event-name" name="event-name" hidden>
-            <option value="event1" selected>Academic Events</option>
-            <option value="event2">Cultural Events</option>
-            <option value="event3">Sports Events</option>
-            <option value="event4">Departmental Events</option>
-          </select>
-          <div class="custom-dropdown" tabindex="0">
-            <div class="selected">Academic Events</div>
-            <ul class="options">
-              <li data-value="event2">Cultural Events</li>
-              <li data-value="event3">Sports Events</li>
-              <li data-value="event4">Departmental Events</li>
-              <li data-value="event1" class="active">Academic Events</li>
-            </ul>
-          </div>
-          <!--user types event-->
-          <label for="event-name">Event Name:</label>
-          <input
-            type="text"
-            name="event-name"
-            placeholder="Type The Event Of The Category Specified"
-            id="event"
-          />
-          <!-- rating -->
-          <p id="rate">Rate your experience:</p>
-          <div class="star-rating">
-            <input type="radio" id="star5" name="rating" value="5" /><label
-              for="star5"
-              title="5 stars"
-            ></label>
-            <input type="radio" id="star4" name="rating" value="4" /><label
-              for="star4"
-              title="4 stars"
-            ></label>
-            <input type="radio" id="star3" name="rating" value="3" /><label
-              for="star3"
-              title="3 stars"
-            ></label>
-            <input type="radio" id="star2" name="rating" value="2" /><label
-              for="star2"
-              title="2 stars"
-            ></label>
-            <input type="radio" id="star1" name="rating" value="1" /><label
-              for="star1"
-              title="1 star"
-            ></label>
-          </div>
-          <br />
-          <!-- message/comment -->
-          <textarea
-            name="comment"
-            id="comment"
-            cols="110"
-            rows="10"
-            style="resize: none"
-            placeholder="Leave your message here"
-          ></textarea>
-          <br />
-          <!-- submit button -->
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    </section>
-
-    <!-- contact page-->
-    <section id="contact-page">
-      <div class="contact-page-box">
-        <div id="contact-txt">
-          <h2>Contact Us</h2>
-          <p>Reach out to our event coordinators for more information.</p>
         </div>
-        <div class="event-organizers-box" id="contact-container">
-          <!-- Cards -->
-        </div>
-        <div id="contact-txt">
-          <h3>
-            Our friendly support team is here to help you. Send a message.
-          </h3>
-        </div>
-        <i
-          class="fa-solid fa-envelope fa-bounce fa-2xl"
-          style="color: #ffffff"
-        ></i>
-
-        <!-- UPDATED FORM -->
-        <form action="#" method="post" id="contact-form">
-          <div class="form-group">
-            <label for="name">Name of Sender</label>
-            <input
-              type="text"
-              name="full-name"
-              placeholder="Full Name"
-              required
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email of Sender</label>
+      </header>
+  
+      <!-- overlay -->
+      <div class="overlay" id="overlay">
+        <div class="popup">
+          <span class="close" id="closeBtn">&times;</span>
+          <h2>Event Registration</h2>
+  
+          <form id="eventForm">
+            <input type="text" name="fullname" placeholder="Full Name" required />
             <input
               type="email"
               name="email"
-              placeholder="Your Email"
+              placeholder="Email Address"
               required
             />
-          </div>
-
-          <div class="form-group">
-            <label for="phone-no">Phone number</label>
             <input
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder="+234"
+              type="text"
+              name="dept"
+              placeholder="College / Department"
               required
             />
+            <button type="submit">Register</button>
+          </form>
+  
+          <div class="success-message" id="successMsg">
+            Thank you for signing up!
+            <br />
+            The popup will close automatically...
           </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
+        </div>
+      </div>
+      <!-- overlay -->
+  
+      <!-- HERO SLIDES -->
+      <section class="upcom-hero" id="hero">
+        <!-- Slide 1 -->
+        <div class="upcom-slide upcom-slide-0 active" data-index="0">
+          <div class="upcom-hero-bgcol split"></div>
+          <div class="upcom-herocard">
+            <div class="upcom-tag">CAMPUS CONNECT</div>
+            <h1 class="upcom-hero-title">WELCOME</h1>
+            <p class="upcom-subtag">Stay Updated, Stay Involved</p>
+          </div>
+        </div>
+  
+        <!-- Slide 2 -->
+        <div class="upcom-slide upcom-slide1" data-index="1">
+          <div class="upcom-hero-bgcol image"></div>
+          <div class="upcom-herocard">
+            <div class="upcom-tag">CAMPUS CONNECT</div>
+            <h1 class="upcom-hero-title">EXPLORE</h1>
+            <p class="upcom-subtag">Exciting events around campus</p>
+          </div>
+        </div>
+  
+        <!-- Slide 3 -->
+        <div class="upcom-slide upcom-slide2" data-index="2">
+          <div class="upcom-hero-bgcol image"></div>
+          <div class="upcom-herocard">
+            <div class="upcom-tag">CAMPUS CONNECT</div>
+            <h1 class="upcom-hero-title">JOIN IN</h1>
+            <p class="upcom-subtag">Be part of the community</p>
+          </div>
+        </div>
+  
+        <!-- Dots -->
+        <div class="upcom-dots" id="heroDots">
+          <button class="upcom-dot active" data-index="0"></button>
+          <button class="upcom-dot" data-index="1"></button>
+          <button class="upcom-dot" data-index="2"></button>
+        </div>
+      </section>
+  
+      <!-- EVENTS -->
+      <section class="upcom-section upcom-container" id="events">
+        <div class="upcom-head">
+          <small class="upcom-muted">UPCOMING EVENTS</small>
+          <h2>Latest <strong>Awesome Events</strong></h2>
+  
+          <!-- Countdown -->
+          <!-- <small> is reducing the size of the text-->
+          <div class="upcom-countdown" id="mainCountdown">
+            <div class="upcom-count">
+              <span id="cd-days">00</span><small>DAYS</small>
+            </div>
+            <div class="upcom-count">
+              <span id="cd-hours">00</span><small>HOURS</small>
+            </div>
+            <div class="upcom-count">
+              <span id="cd-mins">00</span><small>MINS</small>
+            </div>
+            <div class="upcom-count">
+              <span id="cd-secs">00</span><small>SECS</small>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Cards -->
+        <div class="upcom-events-grid">
+          <div
+            class="upcom-card"
+            data-id="1"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <div class="upcom-card-img upcom-img-1"></div>
+            <div class="upcom-date"></div>
+            <div class="upcom-card-info">
+              <h3 class="upcom-cardtitle"></h3>
+              <div class="upcom-card-oth"></div>
+            </div>
+          </div>
+  
+          <div class="upcom-card" data-id="2">
+            <div class="upcom-card-img upcom-img-2"></div>
+            <div class="upcom-date"></div>
+            <div class="upcom-card-info">
+              <h3 class="upcom-cardtitle"></h3>
+              <div class="upcom-card-oth"></div>
+            </div>
+          </div>
+  
+          <div
+            class="upcom-card"
+            data-id="3"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div class="upcom-card-img upcom-img-3"></div>
+            <div class="upcom-date"></div>
+            <div class="upcom-card-info">
+              <h3 class="upcom-cardtitle"></h3>
+              <div class="upcom-card-oth"></div>
+            </div>
+          </div>
+        </div>
+  
+        <div id="noResults" class="upcom-noresults" hidden>No events found.</div>
+      </section>
+  
+      <!-- header and banner joel end -->
+  
+      <!-- About section gt section start -->
+  
+      <div class="about-main" id="about-main">
+        <div class="about-cont">
+          <h2 class="about-txt">ABOUT Us</h2>
+  
+          <div class="about-para">
+            <p>
+              Campus connect is a vibrant hub of innovation, creativity, and
+              culture. From technical fests and hackathons to cultural nights and
+              sports competitions, our campus is alive with opportunities for
+              students to showcase their talents and grow together.
+            </p>
+  
+            <div class="about-btn">
+              <button class="btn">
+                <a href="#" class="txt-tx">View Events</a>
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="parent">
+          <div class="about-card1">
+            <div class="card1-style">
+              <div class="img">
+               <i class="fa-solid fa-handshake fa-2xl"></i>
+              </div>
+  
+              <p class="card1-style-txt">Friendly&nbsp;Community</p>
+              <pre class="card1-style-txt2">
+  Stay Connected with
+  students & faculty.
+                  </pre
+              >
+            </div>
+            <div class="card2-style">
+              <div class="img">
+                <i class="fa-solid fa-calendar-days fa-2xl"></i>
+              </div>
+              <p class="card1-style-txt">Countless&nbsp;Events</p>
+              <pre class="card1-style-txt2">
+  Explore 750+
+  technical, cultural and 
+  sports highlights.
+                  </pre
+              >
+            </div>
+            <div class="card1-style">
+              <div class="img">
+                <i class="fa-solid fa-location-dot fa-2xl"></i>
+              </div>
+              <p class="card1-style-txt">Perfect&nbsp;Venue</p>
+              <pre class="card1-style-txt2">
+  Find the right place
+  for any event on
+  campus.
+                  </pre
+              >
+            </div>
+            <div class="card1-style">
+              <div class="img">
+               <i class="fa-solid fa-lightbulb fa-2xl"></i>
+              </div>
+              <p class="card1-style-txt">Unique&nbsp;Experience</p>
+              <pre class="card1-style-txt2">
+      Every event brings 
+      something new to
+      discover.
+                  </pre
+              >
+            </div>
+            <div class="card1-style">
+              <div class="img">
+               <i class="fa-solid fa-camera fa-2xl"></i>
+              </div>
+              <p class="card1-style-txt">Unforgettable&nbsp;Moments</p>
+              <pre class="card1-style-txt2">
+      Relive the best times
+      from past festivals and
+      competitions.
+                  </pre
+              >
+            </div>
+            <div class="card1-style">
+              <div class="img">
+                <i class="fa-solid fa-bell fa-2xl"></i>
+              </div>
+              <p class="card1-style-txt">Always&nbsp;Updated</p>
+              <pre class="card1-style-txt2">
+      Stay informed
+      anytime, anywhere.
+                  </pre
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- About section gt section end -->
+  
+      <!-- event ire section start -->
+      <section id="events-section" class="events-section">
+        <div class="container">
+          <!-- Section heading and filter toggle -->
+          <div class="events-header">
+            <h2 class="section-title">All Events</h2>
+            <div class="toggle-group" id="timeToggle">
+              <button data-filter="upcoming" class="toggle-btn">Upcoming</button>
+              <button data-filter="past" class="toggle-btn">Past</button>
+              <button data-filter="all" class="toggle-btn active">All</button>
+              <button id="showBookmarks" class="toggle-btn">
+                <i class="fa-regular fa-bookmark"></i> Bookmarked
+              </button>
+            </div>
+          </div>
+  
+          <!-- Search + Sort + Categories -->
+          <div class="events-controls">
+            <div class="control search-control">
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="Search for events"
+                aria-label="Search events"
+              />
+            </div>
+            <div class="control">
+              <select id="sortBy" aria-label="Sort events">
+                <option value="date">Sort by Date</option>
+                <option value="name">Sort by Name</option>
+                <option value="category">Sort by Category</option>
+              </select>
+            </div>
+            <div class="control" id="categoryFilters"></div>
+          </div>
+  
+          <!-- Where the event cards appear -->
+          <div id="eventsGrid" class="events-grid" aria-live="polite"></div>
+  
+          <!-- Message if no results -->
+          <div id="noResults" class="no-results" hidden>No events found.</div>
+        </div>
+      </section>
+  
+      <!-- event ire section end -->
+  
+      <!-- gallery section bolaji start-->
+      <div class="parent-container" id="Gallery">
+        <!-- container-box1-start -->
+        <div class="container-vibes">
+          <div class="box1">
+            <div class="campus10">
+              <!-- txt1-start -->
+              <p id="txt1"></p>
+              <p id="txt2"></p>
+              <!-- txt1-end -->
+            </div>
+            <div class="campus9">
+              <!-- txt3-start -->
+              <p id="txt3"></p>
+              <p id="txt4"></p>
+              <!-- txt3-end   -->
+            </div>
+            <div class="campus8">
+              <!-- txt5-start -->
+              <p class="txt5"></p>
+              <p class="txt6"></p>
+              <!-- txt5-end -->
+            </div>
+          </div>
+        </div>
+        <!-- container-box1-end -->
+  
+        <!-- contatiner-box2-start -->
+        <div class="container-vibes">
+          <div class="box2">
+            <div class="campus7">
+              <!-- txt7-start -->
+              <p class="txt7"></p>
+              <p class="txt8"></p>
+              <!-- txt7-end -->
+            </div>
+            <div class="campus6">
+              <a href="/gallery.html">
+                <button class="b1">View More —></button>
+              </a>
+            </div>
+            <div class="campus5">
+              <!-- txt-9-start -->
+              <p class="txt9"></p>
+              <p class="txt10"></p>
+            </div>
+          </div>
+        </div>
+        <!-- container-box2-end -->
+  
+        <!-- Container-box-3- -->
+        <div class="container-vibes">
+          <div class="box3">
+            <div class="campus4">
+              <!-- txt11-start -->
+              <p class="txt11"></p>
+              <p class="txt12"></p>
+              <!-- txt12-end -->
+            </div>
+            <div class="campus3">
+              <!-- txt13-start -->
+              <p class="txt13"></p>
+              <p class="txt14"></p>
+            </div>
+            <div class="campus2"></div>
+          </div>
+        </div>
+        <!-- container-box3-end -->
+      </div>
+  
+      <!-- gallery section bolaji end-->
+  
+      <!-- feedback section April start -->
+      <section id="feedback-page">
+        <div id="feedback-txt">
+          <h1>Feedback</h1>
+          <p>Tell us, what do you think? What are your thoughts?</p>
+        </div>
+        <div id="feedback-form-box">
+          <form action="#" method="post" id="feedback-form">
+            <!-- name -->
+            <input type="text" name="text" placeholder="Full Name" required />
+            <!-- email -->
+            <input type="text" name="text" placeholder="Your Email" required />
+            <br />
+            <!-- user type -->
+            <label for="user-type">User Type</label>
+            <select id="user-type" name="user-type" hidden>
+              <option value="student">Student</option>
+              <option value="faculty">Faculty</option>
+              <option value="admin" selected>Administrator</option>
+              <option value="visitor">Visitor</option>
+            </select>
+            <div class="custom-dropdown" tabindex="0">
+              <div class="selected">Visitor</div>
+              <ul class="options">
+                <li data-value="student">Student</li>
+                <li data-value="faculty">Faculty</li>
+                <li data-value="admin">Administrator</li>
+                <li data-value="visitor" class="active">Visitor</li>
+              </ul>
+            </div>
+            <!-- event categories -->
+            <label for="categories">Event Categories</label>
+            <select id="event-name" name="event-name" hidden>
+              <option value="event1" selected>Academic Events</option>
+              <option value="event2">Cultural Events</option>
+              <option value="event3">Sports Events</option>
+              <option value="event4">Departmental Events</option>
+            </select>
+            <div class="custom-dropdown" tabindex="0">
+              <div class="selected">Academic Events</div>
+              <ul class="options">
+                <li data-value="event2">Cultural Events</li>
+                <li data-value="event3">Sports Events</li>
+                <li data-value="event4">Departmental Events</li>
+                <li data-value="event1" class="active">Academic Events</li>
+              </ul>
+            </div>
+            <!--user types event-->
+            <label for="event-name">Event Name:</label>
+            <input
+              type="text"
+              name="event-name"
+              placeholder="Type The Event Of The Category Specified"
+              id="event"
+            />
+            <!-- rating -->
+            <p id="rate">Rate your experience:</p>
+            <div class="star-rating">
+              <input type="radio" id="star5" name="rating" value="5" /><label
+                for="star5"
+                title="5 stars"
+              ></label>
+              <input type="radio" id="star4" name="rating" value="4" /><label
+                for="star4"
+                title="4 stars"
+              ></label>
+              <input type="radio" id="star3" name="rating" value="3" /><label
+                for="star3"
+                title="3 stars"
+              ></label>
+              <input type="radio" id="star2" name="rating" value="2" /><label
+                for="star2"
+                title="2 stars"
+              ></label>
+              <input type="radio" id="star1" name="rating" value="1" /><label
+                for="star1"
+                title="1 star"
+              ></label>
+            </div>
+            <br />
+            <!-- message/comment -->
             <textarea
-              name="message"
-              id="message"
-              placeholder="Type your message here"
+              name="comment"
+              id="comment"
+              cols="110"
+              rows="10"
+              style="resize: none"
+              placeholder="Leave your message here"
             ></textarea>
+            <br />
+            <!-- submit button -->
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+  
+      <!-- contact page-->
+      <section id="contact-page">
+        <div class="contact-page-box">
+          <div id="contact-txt">
+            <h2>Contact Us</h2>
+            <p>Reach out to our event coordinators for more information.</p>
           </div>
-
-          <div class="form-actions">
-            <input type="submit" value="Send Message" />
-            <input type="reset" value="Schedule a Call" />
+          <div class="event-organizers-box" id="contact-container">
+            <!-- Cards -->
           </div>
-        </form>
-      </div>
-
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3208293207813!2d3.3072916749936567!3d6.606996793386961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9171cc1003e7%3A0x41b094d0120d48e7!2sAptech%20Computer%20Education%2C%20Akowonjo!5e0!3m2!1sen!2sng!4v1757667861333!5m2!1sen!2sng"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-
-    <!-- feedback section April end -->
-
-    <!-- Gt fotter section start -->
-    <footer>
-      <div class="footer-text">
-        <!-- About Section -->
-        <div class="footer-about">
-          <h1>Campus Connect</h1>
-          <p>
-            Welcome to Campus Connect – where students, staff, and alumni unite
-            to build a stronger community.
-          </p>
-          <div class="footer-logo">
-            <img
-              src="./static/image/logol1.png"
-              width="70"
-              alt="Campus Logo"
-            />
+          <div id="contact-txt">
+            <h3>
+              Our friendly support team is here to help you. Send a message.
+            </h3>
+          </div>
+          <i
+            class="fa-solid fa-envelope fa-bounce fa-2xl"
+            style="color: #ffffff"
+          ></i>
+  
+          <!-- UPDATED FORM -->
+          <form action="#" method="post" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name of Sender</label>
+              <input
+                type="text"
+                name="full-name"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+  
+            <div class="form-group">
+              <label for="email">Email of Sender</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+  
+            <div class="form-group">
+              <label for="phone-no">Phone number</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="+234"
+                required
+              />
+            </div>
+  
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Type your message here"
+              ></textarea>
+            </div>
+  
+            <div class="form-actions">
+              <input type="submit" value="Send Message" />
+              <input type="reset" value="Schedule a Call" />
+            </div>
+          </form>
+        </div>
+  
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3208293207813!2d3.3072916749936567!3d6.606996793386961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9171cc1003e7%3A0x41b094d0120d48e7!2sAptech%20Computer%20Education%2C%20Akowonjo!5e0!3m2!1sen!2sng!4v1757667861333!5m2!1sen!2sng"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+  
+      <!-- feedback section April end -->
+  
+      <!-- Gt fotter section start -->
+      <footer>
+        <div class="footer-text">
+          <!-- About Section -->
+          <div class="footer-about">
+            <h1>Campus Connect</h1>
+            <p>
+              Welcome to Campus Connect – where students, staff, and alumni unite
+              to build a stronger community.
+            </p>
+            <div class="footer-logo">
+              <img
+                src="./static/image/logol1.png"
+                width="70"
+                alt="Campus Logo"
+              />
+            </div>
+          </div>
+  
+          <!-- Network Section -->
+          <div class="footer-Network">
+            <h1>Network</h1>
+            <p>
+              Connect with our student bodies, alumni, and faculty through
+              academic and social events across the campus.
+            </p>
+          </div>
+  
+          <!-- Useful Links -->
+          <div class="footer-links">
+            <h1>Useful Links</h1>
+            <ul>
+              <li><a href="#hero">HOME</a></li>
+              <li><a href="#about-main">ABOUT</a></li>
+              <li><a href="#events-section">EVENT</a></li>
+              <li><a href="#Gallery">GALLERY</a></li>
+              <li><a href="#feedback-page">FEEDBACK</a></li>
+              <li><a href="#contact-page">CONTACT</a></li>
+            </ul>
+          </div>
+  
+          <!-- Gallery / Images -->
+          <div class="footer-images">
+            <h1>Gallery</h1>
+            <p>
+              Explore memories from our latest college festivals, seminars, and
+              sports competitions.
+            </p>
+            <div class="image-grid">
+              <img
+                src="./static/image/Debate_Championship.png"
+                alt="College Event 1"
+              />
+              <img src="./static/image/Music_Jam.png" alt="College Event 2" />
+              <img src="./static/image/cultureimg2.jpg" alt="College Event 3" />
+              <img src="./static/image/Alumni_Meet.png" alt="College Event 4" />
+              <img
+                src="./static/image/cultural_night.png"
+                alt="College Event 5"
+              />
+              <img src="./static/image/Literary_Fest.png" alt="College Event 6" />
+            </div>
           </div>
         </div>
-
-        <!-- Network Section -->
-        <div class="footer-Network">
-          <h1>Network</h1>
-          <p>
-            Connect with our student bodies, alumni, and faculty through
-            academic and social events across the campus.
-          </p>
+  
+        <!-- Bottom Note -->
+        <div class="footer-bottom">
+          <p>© 2024 Campus Connect College. All rights reserved.</p>
         </div>
-
-        <!-- Useful Links -->
-        <div class="footer-links">
-          <h1>Useful Links</h1>
-          <ul>
-            <li><a href="#hero">HOME</a></li>
-            <li><a href="#about-main">ABOUT</a></li>
-            <li><a href="#events-section">EVENT</a></li>
-            <li><a href="#Gallery">GALLERY</a></li>
-            <li><a href="#feedback-page">FEEDBACK</a></li>
-            <li><a href="#contact-page">CONTACT</a></li>
-          </ul>
-        </div>
-
-        <!-- Gallery / Images -->
-        <div class="footer-images">
-          <h1>Gallery</h1>
-          <p>
-            Explore memories from our latest college festivals, seminars, and
-            sports competitions.
-          </p>
-          <div class="image-grid">
-            <img
-              src="./static/image/Debate_Championship.png"
-              alt="College Event 1"
-            />
-            <img src="./static/image/Music_Jam.png" alt="College Event 2" />
-            <img src="./static/image/cultureimg2.jpg" alt="College Event 3" />
-            <img src="./static/image/Alumni_Meet.png" alt="College Event 4" />
-            <img
-              src="./static/image/cultural_night.png"
-              alt="College Event 5"
-            />
-            <img src="./static/image/Literary_Fest.png" alt="College Event 6" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Bottom Note -->
-      <div class="footer-bottom">
-        <p>© 2024 Campus Connect College. All rights reserved.</p>
-      </div>
-    </footer>
-    <!-- Gt fotter section end -->
-
-    <div class="dark_light"><i class="fa-solid fa-moon" id="mode-con"></i></div>
-    
+      </footer>
+      <!-- Gt fotter section end -->
+  
+      <div class="dark_light"><i class="fa-solid fa-moon" id="mode-con"></i></div>
+      
+    </div>
 
 
     <script src="script.js"></script>
