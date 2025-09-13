@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "title": "Cultural Night",
+    "date": "2025-10-05",
+    "time": "6:00 PM",
+    "venue": "Main Auditorium",
+    "category": "Cultural",
+    "description": "A celebration of diverse traditions with performances, food stalls, and ethnic fashion.",
+    "image": "static/image/cultural_night.png"
+  },
+  {
+    "id": 2,
+    "title": "TechFest Expo",
+    "date": "2023-11-12",
+    "time": "10:00 AM",
+    "venue": "Innovation Hall",
+    "category": "Academic",
+    "description": "A showcase of student innovations, coding contests, and emerging tech demos.",
+    "image": "static/image/TechFest.png"
+  },
+  {
+    "id": 3,
+    "title": "Debate Championship",
+    "date": "2025-09-27",
+    "time": "3:00 PM",
+    "venue": "Lecture Theatre B",
+    "category": "Academic",
+    "description": "Inter-departmental debate competition featuring top student orators.",
+    "image": "static/image/Debate_Championship.png"
+  },
+  {
+    "id": 4,
+    "title": "Sports Day",
+    "date": "2026-02-18",
+    "time": "8:00 AM",
+    "venue": "Main Sports Ground",
+    "category": "Sports",
+    "description": "A full day of athletic competitions, games, and fun relays.",
+    "image": "static/image/Sports_Day.png"
+  },
+  {
+    "id": 5,
+    "title": "Film Screening & Discussion",
+    "date": "2025-12-15",
+    "time": "5:00 PM",
+    "venue": "Auditorium C",
+    "category": "Cultural",
+    "description": "A socially relevant film screening followed by an expert-led panel discussion.",
+    "image": "static/image/Film_Screening_&_Discussion.png"
+  },
+  {
+    "id": 6,
+    "title": " Art & Photography Exhibition",
+    "date": "2025-10-20",
+    "time": "9:00 AM",
+    "venue": "Art room",
+    "category": "Departmental",
+    "description": "Students display their best artwork and photo projects in a curated gallery setup.",
+    "image": "static/image/Art_&_Photography_Exhibition.png"
+  },
+  {
+    "id": 7,
+    "title": " Hackathon 24x",
+    "date": "2025-09-01",
+    "time": "10:00 AM",
+    "venue": "Computer Labs",
+    "category": "Departmental",
+    "description": "A 24-hour coding and problem-solving competition open to all departments.",
+    "image": "static/image/Hackathon_24x.png"
+  },
+  {
+    "id": 8,
+    "title": "Literary Fest",
+    "date": "2023-05-12",
+    "time": "9:00 AM",
+    "venue": "Innovation Hall",
+    "category": "Academic",
+    "description": "A celebration of diverse traditions with performances, food stalls, and ethnic fashion.",
+    "image": "static/image/Literary_Fest.png"
+  },
+  {
+    "id": 9,
+    "title": "Career Fair",
+    "date": "2025-09-01",
+    "time": "3:00 PM",
+    "venue": "Main Auditorium",
+    "category": "Academic",
+    "description": "Companies visit the campus for recruitment and internship opportunities",
+    "image": "static/image/Career_Fair.png"
+  },
+  {
+    "id": 10,
+    "title": "Music Jam Night",
+    "date": "2026-03-02",
+    "time": "8:00 PM",
+    "venue": "Auditorium C",
+    "category": "Sports",
+    "description": "Bands and solo artists from campus perform in an open-air evening concert.",
+    "image": "static/image/Music_Jam.png"
+  },
+  {
+    "id": 11,
+    "title": "Mental Health Awareness Day",
+    "date": "2025-01-08",
+    "time": "7:00 AM",
+    "venue": "Main Auditorium",
+    "category": "Academic",
+    "description": "Workshops, counselling booths, and guest talks to promote student well-being.",
+    "image": "static/image/Mental_Health_Awareness_Day.png"
+  },
+  {
+    "id": 12,
+    "title": "Alumni Meet",
+    "date": "2025-07-28",
+    "time": "10:00 AM",
+    "venue": "Main Sports Ground",
+    "category": "Academic",
+    "description": "Former students return to share experiences and network with current students.",
+    "image": "static/image/Alumni_Meet.png"
+  },
+  {
+    "id": 13,
+    "title": " Research Symposium",
+    "date": "2026-01-20",
+    "time": "8:00 AM",
+    "venue": "Auditorium C",
+    "category": "Departmental",
+    "description": "Students present their academic projects and research papers.",
+    "image": "static/image/Research.png"
+  },
+  {
+    "id": 14,
+    "title": "Game Fest",
+    "date": "2025-02-10",
+    "time": "7:00 pM",
+    "venue": "Auditorium C",
+    "category": "Sports",
+    "description": "Board games, esports, and VR game tournaments.",
+    "image": "static/image/Game.png"
+  },
+  {
+    "id": 15,
+    "title": "Food Carnival",
+    "date": "2025-03-12",
+    "time": "12:00 AM",
+    "venue": "Main Sports Ground",
+    "category": "Cultural",
+    "description": "Food trucks and student-run stalls offer a global menu of dishes.",
+    "image": "static/image/Food.png"
+  }
+]

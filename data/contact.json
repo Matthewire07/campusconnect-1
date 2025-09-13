@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Babalola Iremide",
+    "designation": "Faculty Coordinator",
+    "department": "Computer Science",
+    "phone": "+234-701-356-7890",
+    "email": "babalolaire@university.edu"
+  },
+  {
+    "name": "Bamidele Joel",
+    "designation": "Student Coordinator",
+    "department": "Event Management",
+    "phone": "+234-903-456-7891",
+    "email": "bamidele.joel@university.edu"
+  },
+  {
+    "name": "Adefunmbi Adewemimo",
+    "designation": "Faculty Advisor",
+    "department": "Electrical Engineering",
+    "phone": "+234-804-456-7892",
+    "email": "adefunmbi@university.edu"
+  },
+  {
+    "name": "Evans Uvoelum",
+    "designation": "Administrative Head",
+    "department": "Theater Arts",
+    "phone": "+234-800-887-8900",
+    "email": "evansuvo@yahoo.com"
+  }
+]
