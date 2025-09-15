@@ -15,6 +15,18 @@
   ---overlay: rgba(0, 0, 0, 0.7);
   ---overlay1: rgba(0, 0, 0, 0.8);
   ---font: "Montserrat", sans-serif;
+  ---color10: #ffffff; /* white text */
+  ---color11: #1e1e1e; /* page background */
+  ---color12: #292929; /* card background */
+  ---color13: #5a5a5a; /* muted text/borders */
+  ---color14: #e9e32d; /* yellow highlight */
+  ---color15: #000000; /* black */
+  ---color16: #1a1a1a; /* darker shade */
+  ---color17: #ebebeb; /* light gray */
+  ---color18: #121212;
+  ---overlay2: rgba(0, 0, 0, 0.7);
+  ---overlay3: rgba(0, 0, 0, 0.8);
+  ---font: "Montserrat", sans-serif;
 }
 
 * {
@@ -28,25 +40,37 @@ body {
   margin: 0;
   font-family: var(---font);
   background: var(---color2);
-  color: var(---color1);
+  color: var(---color10);
   overflow-x: hidden;
 }
 
 body.light-theme {
-  ---color1: #cacaca; /* white text */
-  ---color2: #dedede; /* page background */
-  ---color3: #e9e32d; /* card background */
-  ---color4: #5a5a5a; /* muted text/borders */
-  ---color5: #ffffff; /* yellow highlight */
-  ---color6: #000000; /* black */
-  ---color7: #000000; /* darker shade */
-  ---color8: #000000; /* light gray */
-  ---color9: #ffffff;
-  ---overlay: rgba(255, 255, 255, 0.7);
-  ---overlay1: rgba(0, 0, 0, 0.8);
+  ---color1: #434040;  /*text (black instead of white) */
+  ---color2: #bdbdbd; /* page background */
+  ---color3: #f5f5f5; /* card background */
+  ---color4: #a0a0a0; /* muted text/borders */
+  ---color5: #c7b800; /* yellow highlight (darker yellow for contrast on light bg) */
+  ---color6: #ffffff; /* white (opposite of black) */
+  ---color7: #f0f0f0; /* lighter shade */
+  ---color8: #2a2a2a; /* dark gray text/accent */
+  ---color9: #fafafa; /* very light background */
+  ---overlay: rgba(255, 255, 255, 0.7); /* light overlay */
+  ---overlay1: rgba(255, 255, 255, 0.8); /* stronger light overlay */
+  ---color10: #000000; /* white text */
+  ---color11: #ffffff; /* page background */
+  ---color12: #acacac; /* card background */
+  ---color13: #5a5a5a; /* muted text/borders */
+  ---color14: #ece9e9; /* yellow highlight */
+  ---color15: #000000; /* black */
+  ---color16: #1a1a1a; /* darker shade */
+  ---color17: #676767; /* light gray */
+  ---color18: #121212;
+  ---overlay2: rgba(0, 0, 0, 0.7);
+  ---overlay3: rgba(0, 0, 0, 0.8);
+  ---font: "Montserrat", sans-serif;
 }
 
-.overflowfixer{
+.overflowfixer {
   width: 100vw;
   overflow-x: hidden;
 }
@@ -95,7 +119,7 @@ header {
 }
 
 .upcom-nav-links a {
-  color: var(---color1);
+  color: var(---color10);
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
@@ -117,7 +141,7 @@ header {
 }
 
 .upcom-nav-links a:hover {
-  color: var(---color5);
+  color: var(---color14);
 }
 .upcom-nav-links a:hover::after {
   width: 100%;
@@ -126,7 +150,7 @@ header {
 /* Mobile menu toggle */
 label {
   font-size: 1.8rem;
-  color: var(---color1);
+  color: var(---color10);
   display: none;
   cursor: pointer;
 }
@@ -161,14 +185,14 @@ label {
 }
 
 .nv-responsive a {
-  color: var(---color1);
+  color: var(---color10);
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s ease;
   margin: 0;
 }
 .nv-responsive a:hover {
-  color: var(---color5);
+  color: var(---color14);
 }
 
 /* Sign Up Button */
@@ -176,7 +200,7 @@ label {
 .signup-btn2 {
   height: 2.5rem;
   background: linear-gradient(135deg, var(---color4), var(---color5));
-  color: var(---color2);
+  color: var(---color11);
   padding: 10px 22px;
   border: none;
   border-radius: 50px;
@@ -199,6 +223,7 @@ label {
   }
   label {
     display: block;
+    margin-bottom: 20px;
   }
   #checkbox:checked ~ .nv-responsive {
     display: flex;
@@ -227,7 +252,7 @@ label {
 .popup {
   background: var(---color2);
   width: 340px;
-  color: var(---color6);
+  color: var(---color15);
   max-width: 100%;
   border-radius: 9px;
   padding: 18px;
@@ -241,7 +266,7 @@ label {
   margin-top: 0;
   font-size: 23px;
   text-align: center;
-  color: var(---color1);
+  color: var(---color10);
 }
 
 .popup input {
@@ -253,7 +278,7 @@ label {
   font-size: 14px;
 }
 .popup input:focus {
-  border-color: var(---color8);
+  border-color: var(---color17);
 }
 
 .popup button {
@@ -263,15 +288,15 @@ label {
   background: var(---color2);
   border: none;
   border-radius: 5px;
-  color: var(---color1);
+  color: var(---color10);
   font-size: 15px;
   font-weight: 550;
   cursor: pointer;
 }
 .popup button:hover {
   background: var(---color4);
-  color: var(---color8);
-  border-color: var(---color4);
+  color: var(---color17);
+  border-color: var(---color13);
   transition: 0.3s;
 }
 
@@ -279,13 +304,13 @@ label {
   float: right;
   font-size: 18px;
   cursor: pointer;
-  color: var(---color1);
+  color: var(---color10);
 }
 
 .success-message {
   text-align: center;
   font-size: 16px;
-  color: var(---color6);
+  color: var(---color15);
   background: var(---color5);
   border: 1px solid var(---color8);
   padding: 15px;
@@ -383,23 +408,23 @@ label {
   margin-bottom: 10px;
   letter-spacing: 2px;
   font-weight: bold;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 .upcom-hero-title {
   font-size: 72px;
   margin: 0;
   font-weight: 800;
   letter-spacing: 5px;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 .upcom-subtag {
   font-size: 13px;
   margin-top: 12px;
-  color: var(---color1);
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  color: var(---color10);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 
 /* Dots */
@@ -444,7 +469,7 @@ label {
 }
 .upcom-head .upcom-muted {
   display: block;
-  color: var(---color8);
+  color: var(---color17);
   letter-spacing: 2px;
   margin-bottom: 6px;
 }
@@ -470,7 +495,7 @@ label {
 .upcom-count small {
   display: block;
   font-size: 12px;
-  color: var(---color8);
+  color: var(---color17);
 }
 .upcom-events-grid {
   display: grid;
@@ -507,7 +532,7 @@ label {
   top: 10px;
   left: 10px;
   background: var(---color5);
-  color: var(---color1);
+  color: var(---color10);
   padding: 10px 5px;
   border-radius: 4px;
   font-weight: 700;
@@ -527,11 +552,11 @@ label {
 }
 .upcom-card-oth {
   font-size: 13px;
-  color: var(---color8);
+  color: var(---color17);
 }
 .upcom-noresults {
   margin-top: 20px;
-  color: var(---color8);
+  color: var(---color17);
 }
 
 /* Responsive */
@@ -549,8 +574,8 @@ label {
 /* About section gt section start */
 
 body {
-  background-color: var(---color2);
-  color: var(---color1);
+  background-color: var(---color11);
+  color: var(---color10);
 }
 
 .about-cont {
@@ -562,7 +587,7 @@ body {
   margin-top: 2rem;
 }
 .about-txt span {
-  color: var(---color5);
+  color: var(---color14);
 }
 .about-para {
   width: 90%;
@@ -570,7 +595,7 @@ body {
   margin-top: 3rem;
   font-size: 1rem;
   font-weight: 500;
-  color: var(---color8);
+  color: var(---color17);
   line-height: 1.5rem;
   @media (max-width: 940px) {
     margin: 50px 0px;
@@ -580,27 +605,27 @@ body {
 .btn {
   height: 2.4rem;
   width: 10rem;
-  color: var(---color8);
-  background-color: var(---color7);
+  color: var(---color17);
+  background-color: var(---color16);
   margin-top: 2.5rem;
   padding: 0rem 1.5rem;
   border-radius: 1.7rem;
   transition: 0.3s ease;
-  border-color: var(---color8);
+  border-color: var(---color17);
   border-style: solid;
 }
 .btn a {
   margin: 0;
 }
 .btn:hover {
-  background-color: var(---color5);
-  color: var(---color6);
+  background-color: var(---color14);
+  color: var(---color15);
   cursor: pointer;
   transition: 0.3s ease;
 }
 .txt-tx {
   text-decoration: none;
-  color: var(---color8);
+  color: var(---color17);
   font-size: 1rem;
   font-style: var(---font);
 }
@@ -634,6 +659,9 @@ body {
   height: 3rem;
   justify-content: center;
   align-items: center;
+  @media (max-width: 445px) {
+    font-size: 3rem;
+  }
 }
 .img {
   display: flex;
@@ -641,44 +669,55 @@ body {
   align-items: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: var(---color5);
+  color: var(---color14);
 }
 .card1-style {
   height: 14rem;
   width: 100%;
-  background-color: var(---color3);
+  background-color: var(---color12);
   align-items: center;
   text-align: center;
   border-radius: 0.4rem;
   padding: 40px;
+  @media (max-width: 445px) {
+    padding: 20px;
+  }
   @media (max-width: 315px) {
     padding: 10px;
   }
 }
 
 .card1-style p {
-  color: var(---color8);
+  color: var(---color17);
 }
 .card1-style-txt {
   font-weight: 500;
   font-size: 1.3rem;
+  text-align: center;
+  @media (max-width: 445px) {
+    font-size: 1.0rem;
+  }
 }
 .card1-style-txt2 {
   font-size: 1rem;
   padding-top: 0.5rem;
   font-weight: 100;
+  text-align: center;
+  @media (max-width: 445px) {
+    font-size: 0.8rem;
+  }
 }
 
 .card2-style {
   height: 14rem;
   width: 100%;
-  background-color: var(---color5);
+  background-color: var(---color14);
   align-items: center;
   text-align: center;
   border-radius: 0.4rem;
   padding: 40px;
   .img {
-    color: var(---color1);
+    color: var(---color10);
   }
   @media (max-width: 315px) {
     padding: 10px;
@@ -739,7 +778,7 @@ body {
 .toggle-btn {
   border: 1px solid var(---color4);
   background: none;
-  color: var(---color1);
+  color: var(---color10);
   padding: 7px 12px;
   border-radius: 6px;
   cursor: pointer;
@@ -764,7 +803,7 @@ body {
 select {
   background: var(---color3);
   border: 1px solid var(---color4);
-  color: var(---color1);
+  color: var(---color10);
   padding: 8px 10px;
   border-radius: 5px;
 }
@@ -779,7 +818,7 @@ select {
 .category-pill {
   border: 1px solid var(---color4);
   background: none;
-  color: var(---color1);
+  color: var(---color10);
   padding: 5px 9px;
   border-radius: 20px;
   font-size: 13px;
@@ -841,7 +880,7 @@ select {
 .event-meta,
 .event-desc {
   font-size: 14px;
-  color: var(---color4);
+  color: var(---color13);
   margin-bottom: 6px;
 }
 
@@ -872,18 +911,18 @@ select {
   padding: 5px 7px;
   cursor: pointer;
   font-size: 16px;
-  color: var(---color4);
+  color: var(---color13);
 }
 
 .bookmark-btn.bookmarked {
-  color: var(---color5);
+  color: var(---color14);
 }
 
 /* Empty  */
 .no-results {
   text-align: center;
   margin-top: 24px;
-  color: var(---color4);
+  color: var(---color13);
   font-size: 15px;
 }
 
@@ -940,16 +979,16 @@ select {
   font-weight: bolder;
   text-align: center;
   color: white;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 #txt2 {
   font-size: 0.8rem;
   font-family: var(---font);
   text-align: center;
   color: white;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 .campus9 {
   width: 41rem;
@@ -974,16 +1013,16 @@ select {
   font-weight: bolder;
   text-align: center;
   color: white;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 #txt4 {
   font-size: 0.8rem;
   font-family: var(---font);
   text-align: center;
   color: white;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 .campus8 {
   width: 40rem;
@@ -1007,16 +1046,16 @@ select {
   color: white;
   font-weight: bolder;
   text-align: center;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 .txt6 {
   font-size: 0.8rem;
   color: white;
   font-weight: bolder;
   text-align: center;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 .box2 {
   display: flex;
@@ -1042,15 +1081,15 @@ select {
   color: white;
   text-align: center;
   margin-top: 12rem;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 .txt8 {
   font-size: 0.8rem;
   color: white;
   text-align: center;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 .campus6 {
   width: 35rem;
@@ -1103,15 +1142,15 @@ a {
   font-weight: bolder;
   margin-top: 12rem;
   text-align: center;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 .txt10 {
   font-size: 0.8rem;
   text-align: center;
   color: white;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 
 .box3 {
@@ -1138,15 +1177,15 @@ a {
   color: white;
   text-align: center;
   margin-top: 15rem;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 .txt12 {
   font-size: 0.8rem;
   color: white;
   text-align: center;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 .campus3 {
   width: 34rem;
@@ -1169,15 +1208,15 @@ a {
   color: white;
   margin-top: 15rem;
   text-align: center;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 .txt14 {
   font-size: 0.8rem;
   text-align: center;
   color: white;
-  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9), -1px 1px 0 var(---color9),
-    1px 1px 0 var(---color9);
+  text-shadow: -1px -1px 0 var(---color9), 1px -1px 0 var(---color9),
+    -1px 1px 0 var(---color9), 1px 1px 0 var(---color9);
 }
 .campus2 {
   width: 30rem;
@@ -1289,8 +1328,8 @@ a {
 }
 
 #feedback-form-box {
-  background-color: var(---color3);
-  height: 700px;
+  background-color: var(---color12);
+  /* height: 700px; */
   width: 75%;
   padding: 50px 30px;
   text-align: center;
@@ -1301,25 +1340,25 @@ a {
 }
 
 #feedback-form-box input[type="text"] {
-  background-color: var(---color2);
+  background-color: var(---color11);
   height: 35px;
-  width: 40%;
+  width: 90%;
   margin: 0 30px 20px 30px;
   border: var(---color7);
   padding: 0 20px;
   border-radius: 12px;
-  color: var(---color1);
+  color: var(---color10);
 }
 
 #feedback-form-box select {
-  background-color: var(---color2);
+  background-color: var(---color11);
   height: 35px;
   width: 86.5%;
   margin: 35px 0 10px 0;
   border: var(---color7);
   padding: 0 20px;
   border-radius: 12px;
-  color: var(---color1);
+  color: var(---color10);
 }
 
 .custom-dropdown {
@@ -1380,12 +1419,12 @@ a {
 
 .options li:hover {
   background: var(---color8);
-  color: var(---color6);
+  color: var(---color15);
 }
 
 .options li.active {
   background: var(---color7);
-  color: var(---color1);
+  color: var(---color10);
 }
 
 #feedback-form-box #rate {
@@ -1425,26 +1464,26 @@ a {
 }
 
 #feedback-form-box textarea {
-  background-color: var(---color2);
+  background-color: var(---color11);
   margin: 15px 0;
   border: var(---color7);
   padding: 5px 1px;
   border-radius: 12px;
-  color: var(---color1);
+  color: var(---color10);
 }
 
 #feedback-form-box input[type="submit"] {
-  background-color: var(---color2);
+  background-color: var(---color11);
   border-radius: 12px;
   width: 30%;
   height: 35px;
   border: none;
-  color: var(---color1);
+  color: var(---color10);
   &:hover {
-    background-color: var(---color4);
+    background-color: var(---color13);
     cursor: pointer;
     border: 1px solid var(---color1);
-    color: var(---color6);
+    color: var(---color15);
   }
 }
 
@@ -1463,8 +1502,8 @@ a {
   }
 
   #feedback-form-box {
-    background-color: var(---color3);
-    height: 700px;
+    background-color: var(---color12);
+    /* height: 700px; */
     width: 75%;
     padding: 50px 30px;
     text-align: center;
@@ -1475,25 +1514,25 @@ a {
   }
 
   #feedback-form-box input[type="text"] {
-    background-color: var(---color2);
+    background-color: var(---color11);
     height: 35px;
-    width: 40%;
+    width: 90%;
     margin: 0 30px 20px 30px;
     border: var(---color7);
     padding: 0 20px;
     border-radius: 12px;
-    color: var(---color1);
+    color: var(---color10);
   }
 
   #feedback-form-box select {
-    background-color: var(---color2);
+    background-color: var(---color11);
     height: 35px;
     width: 87.5%;
     margin: 35px 0 10px 0;
     border: var(---color7);
     padding: 0 20px;
     border-radius: 12px;
-    color: var(---color1);
+    color: var(---color10);
   }
 
   .custom-dropdown {
@@ -1554,12 +1593,12 @@ a {
 
   .options li:hover {
     background: var(---color8);
-    color: var(---color6);
+    color: var(---color15);
   }
 
   .options li.active {
     background: var(---color7);
-    color: var(---color1);
+    color: var(---color10);
   }
 
   #feedback-form-box #rate {
@@ -1595,27 +1634,27 @@ a {
   }
 
   #feedback-form-box textarea {
-    background-color: var(---color2);
+    background-color: var(---color11);
     margin: 15px 0;
     border: var(---color7);
     padding: 5px 1px;
     border-radius: 12px;
-    color: var(---color1);
+    color: var(---color10);
     width: 88%;
   }
 
   #feedback-form-box input[type="submit"] {
-    background-color: var(---color2);
+    background-color: var(---color11);
     border-radius: 12px;
     width: 30%;
     height: 35px;
     border: none;
-    color: var(---color1);
+    color: var(---color10);
     &:hover {
-      background-color: var(---color4);
+      background-color: var(---color13);
       cursor: pointer;
       border: 1px solid var(---color1);
-      color: var(---color6);
+      color: var(---color15);
     }
   }
   /* screen width laptop 1024px end */
@@ -1632,8 +1671,8 @@ a {
     }
 
     #feedback-form-box {
-      background-color: var(---color3);
-      height: 700px;
+      background-color: var(---color12);
+      /* height: 700px; */
       width: 75%;
       padding: 50px 30px;
       text-align: center;
@@ -1644,25 +1683,25 @@ a {
     }
 
     #feedback-form-box input[type="text"] {
-      background-color: var(---color2);
+      background-color: var(---color11);
       height: 35px;
-      width: 40%;
+      width: 90%;
       margin: 0 15px 20px 15px;
       border: var(---color7);
       padding: 0 20px;
       border-radius: 12px;
-      color: var(---color1);
+      color: var(---color10);
     }
 
     #feedback-form-box select {
-      background-color: var(---color2);
+      background-color: var(---color11);
       height: 35px;
       width: 86.5%;
       margin: 35px 0 10px 0;
       border: var(---color7);
       padding: 0 20px;
       border-radius: 12px;
-      color: var(---color1);
+      color: var(---color10);
     }
 
     .custom-dropdown {
@@ -1723,12 +1762,12 @@ a {
 
     .options li:hover {
       background: var(---color8);
-      color: var(---color6);
+      color: var(---color15);
     }
 
     .options li.active {
       background: var(---color7);
-      color: var(---color1);
+      color: var(---color10);
     }
 
     #feedback-form-box #rate {
@@ -1764,25 +1803,25 @@ a {
     }
 
     #feedback-form-box textarea {
-      background-color: var(---color2);
+      background-color: var(---color11);
       margin: 15px 0;
       border: var(---color7);
       padding: 5px 1px;
       border-radius: 12px;
-      color: var(---color1);
+      color: var(---color10);
     }
     #feedback-form-box input[type="submit"] {
-      background-color: var(---color2);
+      background-color: var(---color11);
       border-radius: 12px;
       width: 30%;
       height: 35px;
       border: none;
-      color: var(---color1);
+      color: var(---color10);
       &:hover {
-        background-color: var(---color4);
+        background-color: var(---color13);
         cursor: pointer;
         border: 1px solid var(---color1);
-        color: var(---color6);
+        color: var(---color15);
       }
     }
   }
@@ -1798,8 +1837,8 @@ a {
     }
 
     #feedback-form-box {
-      background-color: var(---color3);
-      height: 700px;
+      background-color: var(---color12);
+      /* height: 700px; */
       width: 75%;
       padding: 30px 30px;
       text-align: center;
@@ -1810,26 +1849,26 @@ a {
     }
 
     #feedback-form-box input[type="text"] {
-      background-color: var(---color2);
+      background-color: var(---color11);
       height: 35px;
       width: 87.5%;
       margin: 10px 12px 0 14px;
       border: var(---color7);
       padding: 0 20px;
       border-radius: 12px;
-      color: var(---color1);
+      color: var(---color10);
       display: block;
     }
 
     #feedback-form-box select {
-      background-color: var(---color2);
+      background-color: var(---color11);
       height: 35px;
       width: 86.5%;
       margin: 7.5px 0 7.5px 0;
       border: var(---color7);
       padding: 0 20px;
       border-radius: 12px;
-      color: var(---color1);
+      color: var(---color10);
     }
     .custom-dropdown {
       position: relative;
@@ -1889,12 +1928,12 @@ a {
 
     .options li:hover {
       background: var(---color8);
-      color: var(---color6);
+      color: var(---color15);
     }
 
     .options li.active {
       background: var(---color7);
-      color: var(---color1);
+      color: var(---color10);
     }
 
     #feedback-form-box #rate {
@@ -1930,12 +1969,12 @@ a {
     }
 
     #feedback-form-box textarea {
-      background-color: var(---color2);
+      background-color: var(---color11);
       margin: 15px 0;
       border: var(---color7);
       padding: 5px 1px;
       border-radius: 12px;
-      color: var(---color1);
+      color: var(---color10);
     }
   }
 
@@ -1950,8 +1989,8 @@ a {
     }
 
     #feedback-form-box {
-      background-color: var(---color3);
-      height: 700px;
+      background-color: var(---color12);
+      /* height: 700px; */
       width: 75%;
       padding: 30px 30px;
       text-align: center;
@@ -1962,26 +2001,26 @@ a {
     }
 
     #feedback-form-box input[type="text"] {
-      background-color: var(---color2);
+      background-color: var(---color11);
       height: 35px;
       width: 87.5%;
       margin: 10px 12px 0 14px;
       border: var(---color7);
       padding: 0 20px;
       border-radius: 12px;
-      color: var(---color1);
+      color: var(---color10);
       display: block;
     }
 
     #feedback-form-box select {
-      background-color: var(---color2);
+      background-color: var(---color11);
       height: 35px;
       width: 86.5%;
       margin: 7.5px 0 7.5px 0;
       border: var(---color7);
       padding: 0 20px;
       border-radius: 12px;
-      color: var(---color1);
+      color: var(---color10);
     }
 
     .custom-dropdown {
@@ -2042,12 +2081,12 @@ a {
 
     .options li:hover {
       background: var(---color8);
-      color: var(---color6);
+      color: var(---color15);
     }
 
     .options li.active {
       background: var(---color7);
-      color: var(---color1);
+      color: var(---color10);
     }
 
     #feedback-form-box #rate {
@@ -2083,12 +2122,12 @@ a {
     }
 
     #feedback-form-box textarea {
-      background-color: var(---color2);
+      background-color: var(---color11);
       margin: 15px 0;
       border: var(---color7);
       padding: 5px 1px;
       border-radius: 12px;
-      color: var(---color1);
+      color: var(---color10);
     }
   }
 
@@ -2107,8 +2146,8 @@ a {
     }
 
     #feedback-form-box {
-      background-color: var(---color3);
-      height: 700px;
+      background-color: var(---color12);
+      /* height: 700px; */
       width: 80%;
       padding: 25px 15px;
       text-align: center;
@@ -2117,28 +2156,30 @@ a {
       border-radius: 12px;
       margin-bottom: 80px;
     }
-
+    #feedback-form-box label {
+      font-size: medium;
+    }
     #feedback-form-box input[type="text"] {
-      background-color: var(---color2);
+      background-color: var(---color11);
       height: 35px;
       width: 95%;
       margin: 15px 10px 0 5px;
       border: var(---color7);
       padding: 0 20px;
       border-radius: 12px;
-      color: var(---color1);
+      color: var(---color10);
       display: block;
     }
 
     #feedback-form-box select {
-      background-color: var(---color2);
+      background-color: var(---color11);
       height: 35px;
       width: 94%;
       margin: 7.5px 0 7.5px 0;
       border: var(---color7);
       padding: 0 20px;
       border-radius: 12px;
-      color: var(---color1);
+      color: var(---color10);
     }
 
     .custom-dropdown {
@@ -2199,12 +2240,12 @@ a {
 
     .options li:hover {
       background: var(---color8);
-      color: var(---color6);
+      color: var(---color15);
     }
 
     .options li.active {
       background: var(---color7);
-      color: var(---color1);
+      color: var(---color10);
     }
 
     #feedback-form-box #rate {
@@ -2240,27 +2281,27 @@ a {
     }
 
     #feedback-form-box textarea {
-      background-color: var(---color2);
+      background-color: var(---color11);
       margin: 10px 0;
       border: var(---color7);
       padding: 5px 2px;
       border-radius: 12px;
-      color: var(---color1);
+      color: var(---color10);
       width: 94%;
     }
   }
   #feedback-form-box input[type="submit"] {
-    background-color: var(---color2);
+    background-color: var(---color11);
     border-radius: 12px;
     width: 30%;
     height: 35px;
     border: none;
-    color: var(---color1);
+    color: var(---color10);
     &:hover {
-      background-color: var(---color4);
+      background-color: var(---color13);
       cursor: pointer;
       border: 1px solid var(---color1);
-      color: var(---color6);
+      color: var(---color15);
     }
   }
 }
@@ -2272,7 +2313,7 @@ a {
 .contact-page-box {
   width: 75%;
   min-height: 25rem;
-  background-color: var(---color3);
+  background-color: var(---color12);
   padding: 20px;
   margin: auto;
   border-radius: 12px;
@@ -2290,7 +2331,7 @@ a {
 
 /* Card styling */
 .card {
-  background-color: var(---color2);
+  background-color: var(---color11);
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 24px;
@@ -2306,7 +2347,7 @@ a {
 
 /* Typography */
 .card h3 {
-  color: var(---color1);
+  color: var(---color10);
   font-size: 1.25rem;
   margin-bottom: 8px;
 }
@@ -2352,59 +2393,59 @@ a {
 .contact-page-box input[type="text"],
 .contact-page-box input[type="email"],
 .contact-page-box input[type="tel"] {
-  background-color: var(---color2);
+  background-color: var(---color11);
   height: 35px;
   width: 68%;
   margin: 10px 0 10px 155px;
   border: var(---color7);
   padding: 0 20px;
   border-radius: 12px;
-  color: var(---color1);
+  color: var(---color10);
   display: block;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 .contact-page-box textarea {
-  background-color: var(---color2);
+  background-color: var(---color11);
   height: 100px;
   width: 68%;
   margin: 10px 0 10px 155px;
   border: var(---color7);
   padding: 0 20px;
   border-radius: 12px;
-  color: var(---color1);
+  color: var(---color10);
   display: block;
 }
 
 .contact-page-box input[type="submit"] {
-  background-color: var(---color4);
+  background-color: var(---color13);
   border-radius: 12px;
   width: 20%;
   height: 35px;
   border: none;
-  color: var(---color6);
+  color: var(---color15);
   margin-left: 250px;
   margin-right: 50px;
   &:hover {
-    background-color: var(---color2);
+    background-color: var(---color11);
     cursor: pointer;
     border: 1px solid var(---color1);
-    color: var(---color1);
+    color: var(---color10);
   }
 }
 
 .contact-page-box input[type="reset"] {
-  background-color: var(---color2);
+  background-color: var(---color11);
   border-radius: 12px;
   width: 20%;
   height: 35px;
   border: none;
-  color: var(---color1);
+  color: var(---color10);
   margin-left: 50px;
   &:hover {
-    background-color: var(---color4);
+    background-color: var(---color13);
     cursor: pointer;
     border: 1px solid var(---color1);
-    color: var(---color6);
+    color: var(---color15);
   }
 }
 
@@ -2423,7 +2464,7 @@ a {
   .contact-page-box {
     width: 75%;
     min-height: 25rem;
-    background-color: var(---color3);
+    background-color: var(---color12);
     padding: 20px;
     margin: auto;
     border-radius: 12px;
@@ -2448,59 +2489,59 @@ a {
   .contact-page-box input[type="text"],
   .contact-page-box input[type="email"],
   .contact-page-box input[type="tel"] {
-    background-color: var(---color2);
+    background-color: var(---color11);
     height: 35px;
     width: 68%;
     margin: 10px 0 10px 50px;
     border: var(---color7);
     padding: 0 20px;
     border-radius: 12px;
-    color: var(---color1);
+    color: var(---color10);
     display: block;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
   .contact-page-box textarea {
-    background-color: var(---color2);
+    background-color: var(---color11);
     height: 100px;
     width: 68%;
     margin: 10px 0 10px 50px;
     border: var(---color7);
     padding: 0 20px;
     border-radius: 12px;
-    color: var(---color1);
+    color: var(---color10);
     display: block;
   }
 
   .contact-page-box input[type="submit"] {
-    background-color: var(---color4);
+    background-color: var(---color13);
     border-radius: 12px;
     width: 30%;
     height: 35px;
     border: none;
-    color: var(---color6);
+    color: var(---color15);
     margin-left: 50px;
     margin-right: 20px;
     &:hover {
-      background-color: var(---color2);
+      background-color: var(---color11);
       cursor: pointer;
       border: 1px solid var(---color1);
-      color: var(---color1);
+      color: var(---color10);
     }
   }
 
   .contact-page-box input[type="reset"] {
-    background-color: var(---color2);
+    background-color: var(---color11);
     border-radius: 12px;
     width: 30%;
     height: 35px;
     border: none;
-    color: var(---color1);
+    color: var(---color10);
     margin-left: 15px;
     &:hover {
-      background-color: var(---color4);
+      background-color: var(---color13);
       cursor: pointer;
       border: 1px solid var(---color1);
-      color: var(---color6);
+      color: var(---color15);
     }
   }
 }
@@ -2531,7 +2572,7 @@ a {
 /* Gt fotter section start  */
 footer {
   background: var(---color2);
-  color: var(---color1);
+  color: var(---color10);
   padding: 40px 20px 20px;
 }
 
@@ -2552,19 +2593,19 @@ footer {
 .footer-about h1 {
   font-size: 20px;
   margin: 5px 0;
-  color: var(---color5);
+  color: var(---color14);
 }
 
 .footer-text h1 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: var(---color5);
+  color: var(---color14);
 }
 
 .footer-text p {
   font-size: 14px;
   line-height: 1.6;
-  color: var(---color1);
+  color: var(---color10);
 }
 
 .footer-links ul {
@@ -2578,14 +2619,14 @@ footer {
 
 .footer-links ul li a {
   text-decoration: none;
-  color: var(---color1);
+  color: var(---color10);
   font-size: 14px;
   transition: 0.3s;
   margin: 0;
 }
 
 .footer-links ul li a:hover {
-  color: var(---color5);
+  color: var(---color14);
 }
 
 footer .footer-events .image-grid {
@@ -2604,7 +2645,7 @@ footer .footer-events .image-grid {
   text-align: center;
   padding-top: 15px;
   font-size: 13px;
-  color: var(---color1);
+  color: var(---color10);
 }
 
 @media (max-width: 768px) {
