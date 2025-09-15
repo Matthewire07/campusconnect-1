@@ -1,6 +1,7 @@
 // header section 
 const btn = document.querySelector(".ham")
 const btnmod = document.querySelector(".dark_light")
+const logol = document.querySelector(".the-logo")
 const body = document.body
 
 let isOpen = false
@@ -28,9 +29,11 @@ btnmod.addEventListener("click", function() {
     // update icon depending on state
     if (body.classList.contains("light-theme")) {
         btnmod.innerHTML = '<i class="fa-solid fa-sun" id="mode-con"></i>'
+        logol.innerHTML = '<img style="height: 50px" class="logoimg-header" src="/static/image/logol.png" alt="" />'
         localStorage.setItem("theme", "light")
     } else {
         btnmod.innerHTML = '<i class="fa-solid fa-moon" id="mode-con"></i>'
+        logol.innerHTML = '<img style="height: 50px" class="logoimg-header" src="/static/image/logol1.png" alt="" />'
         localStorage.setItem("theme", "dark")
     }
 })
@@ -39,8 +42,10 @@ btnmod.addEventListener("click", function() {
 if (localStorage.getItem("theme") === "light") {
     body.classList.add("light-theme")
     btnmod.innerHTML = '<i class="fa-solid fa-sun" id="mode-con"></i>'
+    logol.innerHTML = '<img style="height: 50px" class="logoimg-header" src="/static/image/logol.png" alt="" />'
 } else {
     btnmod.innerHTML = '<i class="fa-solid fa-moon" id="mode-con"></i>'
+    logol.innerHTML = '<img style="height: 50px" class="logoimg-header" src="/static/image/logol1.png" alt="" />'
 }
 
 
