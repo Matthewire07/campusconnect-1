@@ -44,6 +44,11 @@ body {
   overflow-x: hidden;
 }
 
+body::selection{
+  background: var(---color11);
+  color: var(---color1);
+}
+
 body.light-theme {
   ---color1: #434040;  /*text (black instead of white) */
   ---color2: #bdbdbd; /* page background */
@@ -84,10 +89,14 @@ header {
   background: var(---overlay1); /* transparent black for sleek look */
   backdrop-filter: blur(8px); /* glass effect */
   padding: 12px 30px;
+  border-bottom: 1px solid var(---overlay);
+}
+
+.header-rx5321{
   position: sticky;
   top: 0;
   z-index: 50;
-  border-bottom: 1px solid var(---overlay);
+
 }
 
 .upcom-navrow {
